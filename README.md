@@ -28,3 +28,9 @@
       hls.attachMedia(video);
     } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
       video.src = videoSrc;
+    } else {
+      video.innerHTML = '<p>Este navegador no soporta HLS.</p>';
+    }
+  </script>
+</body>
+</html>
